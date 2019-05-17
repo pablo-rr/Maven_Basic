@@ -23,11 +23,9 @@ class ProgramameTest {
 	@Test
 	void testProblemaA() {
 		assertNotNull(ej.problemaA(Collections.EMPTY_LIST));
-		assertArrayEquals(
-				new String[] { "-8","5","21","ERROR","-8" },
+		assertArrayEquals(new String[] { "-8", "5", "21", "ERROR", "-8" },
 				ej.problemaA(new ArrayList<>(Arrays.asList("5", "5 + -13", "10 / 2", "7 * 3", "3 / 0", "5 - 13")))
-						.toArray()
-				);
+						.toArray());
 	}
 
 	/**
@@ -37,7 +35,7 @@ class ProgramameTest {
 	void testProblemaB() {
 		assertNotNull(ej.problemaB(Collections.EMPTY_LIST));
 		assertArrayEquals(new String[] { "OK", "ERROR", "OK", "ERROR", "ERROR", "ERROR" },
-				ej.problemaA(new ArrayList<>(Arrays.asList("6", "Polonio", "TT", "RADIO", "helio", "BeCeRRo", "AHA")))
+				ej.problemaB(new ArrayList<>(Arrays.asList("6", "Polonio", "TT", "RADIO", "helio", "BeCeRRo", "AHA")))
 						.toArray());
 	}
 

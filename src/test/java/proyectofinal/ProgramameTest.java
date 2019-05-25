@@ -46,7 +46,7 @@ class ProgramameTest {
 	void testProblemaC() {
 		assertNotNull(ej.problemaC(Collections.EMPTY_LIST));
 		assertArrayEquals(new String[] { "3", "100", "137", "7" },
-				ej.problemaA(new ArrayList<>(Arrays.asList("4", "12", "0"))).toArray());
+				ej.problemaC(new ArrayList<>(Arrays.asList("4", "12", "0"))).toArray());
 	}
 
 	/**
@@ -55,7 +55,7 @@ class ProgramameTest {
 	@Test
 	void testProblemaD() {
 		assertNotNull(ej.problemaD(Collections.EMPTY_LIST));
-		assertArrayEquals(new String[] { "VICTORIA", "GAMEOVER", "PERDIDO" }, ej.problemaA(new ArrayList<>(
+		assertArrayEquals(new String[] { "VICTORIA", "GAMEOVER", "PERDIDO" }, ej.problemaD(new ArrayList<>(
 				Arrays.asList("3", "2", "1", "1 2", "2", "3", "1", "1 2", "2,3", "5", "2", "1 2", "3 2", "2,3")))
 						.toArray());
 	}
@@ -68,7 +68,7 @@ class ProgramameTest {
 		assertNotNull(ej.problemaE(Collections.EMPTY_LIST));
 		assertArrayEquals(
 				new String[] { "Caso 1:", "100 1000", "50 300", "50 5000", "Caso 2:", "60 300", "50 300", "100 1000" },
-				ej.problemaA(new ArrayList<>(Arrays.asList("2", "100", "3", "100 1000", "50 300", "50 5000", "200", "3",
+				ej.problemaE(new ArrayList<>(Arrays.asList("2", "100", "3", "100 1000", "50 300", "50 5000", "200", "3",
 						"100 1000", "60 300", "50 300")))
 						.toArray());
 	}
